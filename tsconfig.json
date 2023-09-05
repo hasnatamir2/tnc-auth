@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "module": "commonJS",
+        "moduleResolution": "Node",
+        "noImplicitAny": false,
+        "outDir": "./build",
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "strictPropertyInitialization": false,
+        "allowJs": true,
+        "target": "es2020",
+        "lib": ["es2020", "es2020.promise", "es2020.bigint", "es2020.string"],
+        "baseUrl": "./",
+        "paths": {
+            "@application/*": ["app/application/*"],
+            "@domain/*": ["app/domain/*"],
+            "@http/*": ["app/http/*"],
+            "@controller/*": ["app/http/controllers/*"],
+            "@infra/*": ["app/infra/*"]
+        }
+    },
+    "include": ["app/**/*.ts", "cli"],
+    "exclude": ["node_modules"]
+}
